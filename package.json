@@ -1,0 +1,29 @@
+{
+  "name": "vscode-novel-tool",
+  "version": "0.0.1",
+  "description": "a tool for reading novel on vscode",
+  "publisher": "gaojr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaojr/vscode-novel-tool"
+  },
+  "categories": ["Other"],
+  "main": "./src/main.js",
+  "activationEvents": ["*"],
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "lint": "eslint src",
+    "fix": "eslint --fix src",
+    "prettier": "prettier --write \"**/*.{js,json,md}\"",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.44.0"
+  },
+  "engines": {
+    "vscode": "^1.44.0"
+  },
+  "license": "MPL-2.0"
+}
