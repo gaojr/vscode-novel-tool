@@ -15,9 +15,7 @@
   },
   "scripts": {
     "lint": "eslint src --ext .ts",
-    "fix": "eslint --fix src",
-    "prettier": "prettier --write '**/*.{ts,js,json,md}'",
-    "start": "node src/index.js"
+    "format": "prettier --write '**/*.{ts,js,json,md}'"
   },
   "devDependencies": {
     "@types/vscode": "^1.44.0",
