@@ -10,6 +10,7 @@
   "jsxSingleQuote": true,
   "overrides": [
     { "files": "*.md", "options": { "parser": "mdx" } },
+    { "files": "*.ts", "options": { "parser": "typescript" } },
     { "files": "*.js", "options": { "parser": "flow" } },
     { "files": "*.json", "options": { "parser": "json" } },
     { "files": ".prettierrc", "options": { "parser": "json" } }
