@@ -1,16 +1,16 @@
-import * as vscode from 'vscode';
+import { commands, Disposable, ExtensionContext } from 'vscode';
 
 /**
  * 缓存
  */
-let disposables: vscode.Disposable[] = [];
+let disposables: Disposable[] = [];
 
 /**
  * this method is called when your extension is activated\
  * your extension is activated the very first time the command is executed
- * @param {vscode.ExtensionContext} context
+ * @param {ExtensionContext} context
  */
-export function activate(context: vscode.ExtensionContext): void {
+export function activate(context: ExtensionContext): void {
   // This code will only be executed once when your extension is activated
 }
 

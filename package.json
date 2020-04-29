@@ -8,12 +8,14 @@
     "url": "https://github.com/gaojr/vscode-novel-tool"
   },
   "categories": ["Other"],
-  "main": "./src/main.ts",
+  "main": "./out/main.js",
   "activationEvents": ["*"],
   "contributes": {
     "commands": []
   },
   "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write '**/*.{ts,js,json,md}'"
   },
