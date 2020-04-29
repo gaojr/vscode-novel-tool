@@ -28,7 +28,6 @@
   },
   "scripts": {
     "compile": "tsc -p ./",
-    "watch": "tsc -w -p ./",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write '**/*.{ts,js,json,md}'"
   },
