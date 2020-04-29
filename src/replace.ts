@@ -1,6 +1,25 @@
 import { commands, window, TextEditor, Range } from 'vscode';
 
 /**
+ * 替换
+ * @param {TextEditor} editor 编辑器
+ * @param {RegExp} regEx 正则表达式
+ * @param {string} value 替换文字
+ */
+function replaceByLine(editor: TextEditor, regEx: RegExp, value: string): void {
+  editor.edit((editBuilder) => {
+    const document = editor.document;
+    const lastLine = document.lineCount;
+    for (let line = 0; line < lastLine; line++) {
+      const textLine = document.lineAt(line);
+      const range = textLine.range;
+      const text = textLine.text;
+      editBuilder.replace(range, text.replace(regEx, value));
+    }
+  });
+}
+
+/**
  * 变换字符
  * @param {TextEditor} editor 编辑器
  * @param {RegExp} regEx 正则表达式
@@ -41,4 +60,13 @@ export function full2Half(): void {
  */
 export function deleteBlankAfter(): void {
   commands.executeCommand('editor.action.trimTrailingWhitespace');
+}
+
+/**
+ * 删除行首空白
+ */
+export function deleteBlankBefore(): void {
+  if (window.activeTextEditor) {
+    replaceByLine(window.activeTextEditor, /^\s+/gm, '');
+  }
 }
