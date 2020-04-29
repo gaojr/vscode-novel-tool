@@ -9,9 +9,14 @@
   },
   "categories": ["Other"],
   "main": "./out/main.js",
-  "activationEvents": ["*"],
+  "activationEvents": ["*", "onCommand:novel.tool.narrow"],
   "contributes": {
-    "commands": []
+    "commands": [
+      {
+        "command": "novel.tool.narrow",
+        "title": "全角->半角"
+      }
+    ]
   },
   "scripts": {
     "compile": "tsc -p ./",
