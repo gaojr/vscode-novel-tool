@@ -9,12 +9,20 @@
   },
   "categories": ["Other"],
   "main": "./out/main.js",
-  "activationEvents": ["*", "onCommand:novel.tool.narrow"],
+  "activationEvents": [
+    "*",
+    "onCommand:novel.tool.narrow",
+    "onCommand:novel.tool.deleteBlankAfter"
+  ],
   "contributes": {
     "commands": [
       {
         "command": "novel.tool.narrow",
-        "title": "全角->半角"
+        "title": "全角转换为半角"
+      },
+      {
+        "command": "novel.tool.deleteBlankAfter",
+        "title": "删除行末空白"
       }
     ]
   },

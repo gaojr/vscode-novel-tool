@@ -1,4 +1,4 @@
-import { window, TextEditor, Range } from 'vscode';
+import { commands, window, TextEditor, Range } from 'vscode';
 
 /**
  * 变换字符
@@ -34,4 +34,11 @@ export function full2Half(): void {
   if (window.activeTextEditor) {
     offsetCharCode(window.activeTextEditor, /[０-９Ａ-Ｚａ-ｚ＆．]/g, -65248);
   }
+}
+
+/**
+ * 删除行末空白
+ */
+export function deleteBlankAfter(): void {
+  commands.executeCommand('editor.action.trimTrailingWhitespace');
 }
