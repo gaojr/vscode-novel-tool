@@ -4,9 +4,11 @@
 
 [![License: MPL-2.0](https://img.shields.io/github/license/gaojr/vscode-novel-tool?cacheSeconds=3600)](https://github.com/gaojr/vscode-novel-tool/blob/master/LICENSE)
 
-https://github.com/gaojr/vscode-novel-tool/blob/master/LICENSE
-
 ## Features
+
+- 全角转半角功能
+- 删除行末空白
+- 删除行首空白
 
 ## Extension Settings
 
