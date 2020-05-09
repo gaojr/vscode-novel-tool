@@ -37,7 +37,7 @@ export function activate(context: ExtensionContext): void {
  * this method is called when your extension is deactivated
  */
 export function deactivate(): void {
-  if (!!disposables) {
+  if (disposables) {
     disposables.forEach((item) => item.dispose());
   }
   disposables = [];

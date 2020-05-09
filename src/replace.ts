@@ -25,21 +25,14 @@ function replaceByLine(editor: TextEditor, regEx: RegExp, value: string): void {
  * @param {RegExp} regEx 正则表达式
  * @param {number} offset 偏移量
  */
-function offsetCharCode(
-  editor: TextEditor,
-  regEx: RegExp,
-  offset: number
-): void {
+function offsetCharCode(editor: TextEditor, regEx: RegExp, offset: number): void {
   editor.edit((editBuilder) => {
     const document = editor.document;
     const text = document.getText();
     let match;
     while ((match = regEx.exec(text))) {
       editBuilder.replace(
-        new Range(
-          document.positionAt(match.index),
-          document.positionAt(match.index + 1)
-        ),
+        new Range(document.positionAt(match.index), document.positionAt(match.index + 1)),
         String.fromCharCode(match[0].charCodeAt(0) + offset)
       );
     }

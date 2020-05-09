@@ -9,11 +9,7 @@
   },
   "categories": ["Other"],
   "main": "./out/main.js",
-  "activationEvents": [
-    "*",
-    "onCommand:novel.tool.narrow",
-    "onCommand:novel.tool.deleteBlankAfter"
-  ],
+  "activationEvents": ["*", "onCommand:novel.tool.narrow", "onCommand:novel.tool.deleteBlankAfter"],
   "contributes": {
     "commands": [
       {
