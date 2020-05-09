@@ -27,9 +27,10 @@
     ]
   },
   "scripts": {
-    "compile": "tsc -p ./",
-    "lint": "eslint src --ext .ts",
-    "format": "prettier --write '**/*.{ts,js,json,md}'"
+    "compile": "npm install && tsc -p ./",
+    "lint": "eslint src --ext .ts,.js",
+    "fix": "eslint --fix src --ext .ts,.js",
+    "format": "prettier --write \"**/*.{ts,js,json,md}\""
   },
   "devDependencies": {
     "@types/vscode": "^1.44.0",
