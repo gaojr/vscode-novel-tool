@@ -97,8 +97,8 @@ export function addEmpetyLine(): void {
  * 删除空行
  */
 export function deleteEmpetyLine(): void {
-  if (window.activeTextEditor) {
-    const editor = window.activeTextEditor;
+  const editor = window.activeTextEditor;
+  if (editor) {
     editor.edit((editBuilder) => {
       const document = editor.document;
       const lastLine = document.lineCount;
@@ -108,6 +108,32 @@ export function deleteEmpetyLine(): void {
           editBuilder.delete(textLine.rangeIncludingLineBreak);
         }
       }
+    });
+  }
+}
+
+/**
+ * 英文标点转换为中文
+ */
+export function punctuationE2C(): void {
+  const editor = window.activeTextEditor;
+  if (editor) {
+    const document = editor.document;
+    const lastLine = document.lineCount;
+    const range = new Range(0, 0, lastLine, 0);
+    let text = document.getText();
+    text = text
+      // 所有英文逗号改中文逗号
+      .replace(/\s*,\s*/g, '，')
+      // 把两个数字间的逗号改为英文逗号
+      .replace(/(?<=\d)，(?=\d)/g, ',')
+      .replace(/\s*!\s*/g, '！')
+      .replace(/\s*\?\s*/g, '？')
+      .replace(/\s*;\s*/g, '；')
+      .replace(/\s*:\s*/g, '：');
+
+    editor.edit((editBuilder) => {
+      editBuilder.replace(range, text);
     });
   }
 }

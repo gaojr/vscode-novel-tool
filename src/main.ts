@@ -43,6 +43,12 @@ export function activate(context: ExtensionContext): void {
       replace.deleteEmpetyLine();
     })
   );
+
+  disposables.push(
+    commands.registerCommand('novel.tool.punctuationE2C', () => {
+      replace.punctuationE2C();
+    })
+  );
 }
 
 /**

@@ -5,7 +5,6 @@ All notable changes to this project will be documented in this file.
 ## [Unreleased]
 
 - 打开文件时自动转换编码
-- 英文标点转换为中文
 - 矫正引号
 - 英文、数字跟中文之间加空格
 
@@ -15,6 +14,17 @@ All notable changes to this project will be documented in this file.
 
 - 增加空行
 - 删除空行
+- 英文标点转换为中文:
+  ```
+  ,!?;:
+  ```
+
+### fix
+
+- 全角转半角功能:
+  ```
+  　＂＃＄％＆＇（）＊＋，－．／０１２３４５６７８９＜＝＞＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝～
+  ```
 
 ## [0.0.4] - 2020-04-24
 

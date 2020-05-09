@@ -12,9 +12,7 @@
   },
   "categories": ["Other"],
   "main": "./out/main.js",
-  "activationEvents": [
-    "*"
-  ],
+  "activationEvents": ["*"],
   "contributes": {
     "commands": [
       {
@@ -36,6 +34,10 @@
       {
         "command": "novel.tool.deleteEmpetyLine",
         "title": "删除空行"
+      },
+      {
+        "command": "novel.tool.punctuationE2C",
+        "title": "英文标点转换为中文"
       }
     ]
   },
