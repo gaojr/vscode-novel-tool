@@ -13,11 +13,7 @@
   "categories": ["Other"],
   "main": "./out/main.js",
   "activationEvents": [
-    "*",
-    "onCommand:novel.tool.narrow",
-    "onCommand:novel.tool.deleteBlankAfter",
-    "onCommand:novel.tool.deleteBlankBefore",
-    "onCommand:novel.tool.addEmpetyLine"
+    "*"
   ],
   "contributes": {
     "commands": [
