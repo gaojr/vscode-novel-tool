@@ -61,7 +61,10 @@ function offsetCharCode(editor: TextEditor, regEx: RegExp, offset: number): void
  */
 export function full2Half(): void {
   if (window.activeTextEditor) {
-    offsetCharCode(window.activeTextEditor, /[０-９Ａ-Ｚａ-ｚ＆．]/g, -65248);
+    // 逗号、感叹号、问号、分号、冒号外的全角字符
+    offsetCharCode(window.activeTextEditor, /[\uff02-\uff0b\uff0d-\uff19\uff1c-\uff1e\uff20-\uff5e]/g, -65248);
+    // 全角空格
+    offsetCharCode(window.activeTextEditor, /[\u3000]/g, -12256);
   }
 }
 
