@@ -37,6 +37,12 @@ export function activate(context: ExtensionContext): void {
       replace.addEmpetyLine();
     })
   );
+
+  disposables.push(
+    commands.registerCommand('novel.tool.deleteEmpetyLine', () => {
+      replace.deleteEmpetyLine();
+    })
+  );
 }
 
 /**

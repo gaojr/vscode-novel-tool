@@ -89,3 +89,22 @@ export function addEmpetyLine(): void {
     addByLine(window.activeTextEditor, '\n');
   }
 }
+
+/**
+ * 删除空行
+ */
+export function deleteEmpetyLine(): void {
+  if (window.activeTextEditor) {
+    const editor = window.activeTextEditor;
+    editor.edit((editBuilder) => {
+      const document = editor.document;
+      const lastLine = document.lineCount;
+      for (let line = 0; line < lastLine; line++) {
+        const textLine = document.lineAt(line);
+        if (textLine.isEmptyOrWhitespace) {
+          editBuilder.delete(textLine.rangeIncludingLineBreak);
+        }
+      }
+    });
+  }
+}

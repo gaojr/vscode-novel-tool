@@ -33,6 +33,10 @@
       {
         "command": "novel.tool.addEmpetyLine",
         "title": "增加空行"
+      },
+      {
+        "command": "novel.tool.deleteEmpetyLine",
+        "title": "删除空行"
       }
     ]
   },
