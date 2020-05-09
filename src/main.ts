@@ -1,5 +1,5 @@
 import { commands, Disposable, ExtensionContext } from 'vscode';
-import { full2Half, deleteBlankAfter, deleteBlankBefore } from './replace';
+import { full2Half, deleteBlankAfter, deleteBlankBefore, addEmpetyLine } from './replace';
 
 /**
  * 缓存
@@ -29,6 +29,12 @@ export function activate(context: ExtensionContext): void {
   disposables.push(
     commands.registerCommand('novel.tool.deleteBlankBefore', () => {
       deleteBlankBefore();
+    })
+  );
+
+  disposables.push(
+    commands.registerCommand('novel.tool.addEmpetyLine', () => {
+      addEmpetyLine();
     })
   );
 }

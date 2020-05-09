@@ -9,7 +9,13 @@
   },
   "categories": ["Other"],
   "main": "./out/main.js",
-  "activationEvents": ["*", "onCommand:novel.tool.narrow", "onCommand:novel.tool.deleteBlankAfter", "onCommand:novel.tool.deleteBlankBefore"],
+  "activationEvents": [
+    "*",
+    "onCommand:novel.tool.narrow",
+    "onCommand:novel.tool.deleteBlankAfter",
+    "onCommand:novel.tool.deleteBlankBefore",
+    "onCommand:novel.tool.addEmpetyLine"
+  ],
   "contributes": {
     "commands": [
       {
@@ -23,6 +29,10 @@
       {
         "command": "novel.tool.deleteBlankBefore",
         "title": "删除行首空白"
+      },
+      {
+        "command": "novel.tool.addEmpetyLine",
+        "title": "增加空行"
       }
     ]
   },

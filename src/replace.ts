@@ -6,6 +6,23 @@ import { commands, window, TextEditor, Range } from 'vscode';
  * @param {RegExp} regEx 正则表达式
  * @param {string} value 替换文字
  */
+function addByLine(editor: TextEditor, value: string): void {
+  editor.edit((editBuilder) => {
+    const document = editor.document;
+    const lastLine = document.lineCount;
+    for (let line = 0; line < lastLine; line++) {
+      const textLine = document.lineAt(line);
+      editBuilder.replace(textLine.range, textLine.text + value);
+    }
+  });
+}
+
+/**
+ * 替换
+ * @param {TextEditor} editor 编辑器
+ * @param {RegExp} regEx 正则表达式
+ * @param {string} value 替换文字
+ */
 function replaceByLine(editor: TextEditor, regEx: RegExp, value: string): void {
   editor.edit((editBuilder) => {
     const document = editor.document;
@@ -61,5 +78,14 @@ export function deleteBlankAfter(): void {
 export function deleteBlankBefore(): void {
   if (window.activeTextEditor) {
     replaceByLine(window.activeTextEditor, /^\s+/gm, '');
+  }
+}
+
+/**
+ * 增加空行
+ */
+export function addEmpetyLine(): void {
+  if (window.activeTextEditor) {
+    addByLine(window.activeTextEditor, '\n');
   }
 }
