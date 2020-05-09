@@ -6,10 +6,15 @@ All notable changes to this project will be documented in this file.
 
 - 打开文件时自动转换编码
 - 删除多余空行
-- 增加空行
 - 英文标点转换为中文
 - 矫正引号
 - 英文、数字跟中文之间加空格
+
+## [0.0.5] - 2020-05-09
+
+### Added
+
+- 增加空行
 
 ## [0.0.4] - 2020-04-24
 
