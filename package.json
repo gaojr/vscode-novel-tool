@@ -37,7 +37,7 @@
     ]
   },
   "scripts": {
-    "compile": "npm install && tsc -p ./",
+    "compile": "tsc -p ./",
     "lint": "eslint src --ext .ts,.js",
     "fix": "eslint --fix src --ext .ts,.js",
     "format": "prettier --write \"**/*.{ts,js,json,md}\""
