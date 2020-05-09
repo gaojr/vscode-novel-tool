@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/gaojr/vscode-novel-tool"
   },
+  "bugs": {
+    "url": "https://github.com/gaojr/vscode-novel-tool/issues"
+  },
   "categories": ["Other"],
   "main": "./out/main.js",
   "activationEvents": [
