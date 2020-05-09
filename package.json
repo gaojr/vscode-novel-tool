@@ -12,7 +12,8 @@
   "activationEvents": [
     "*",
     "onCommand:novel.tool.narrow",
-    "onCommand:novel.tool.deleteBlankAfter"
+    "onCommand:novel.tool.deleteBlankAfter",
+    "onCommand:novel.tool.deleteBlankBefore"
   ],
   "contributes": {
     "commands": [
