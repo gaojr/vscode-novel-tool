@@ -49,6 +49,12 @@ export function activate(context: ExtensionContext): void {
       replace.punctuationE2C();
     })
   );
+
+  disposables.push(
+    commands.registerCommand('novel.tool.addwhitespace', () => {
+      replace.addwhitespace();
+    })
+  );
 }
 
 /**

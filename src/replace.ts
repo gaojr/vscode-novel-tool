@@ -137,3 +137,21 @@ export function punctuationE2C(): void {
     });
   }
 }
+
+/**
+ * 英文、数字跟中文之间加空格
+ */
+export function addwhitespace(): void {
+  const editor = window.activeTextEditor;
+  if (editor) {
+    const document = editor.document;
+    const lastLine = document.lineCount;
+    const range = new Range(0, 0, lastLine, 0);
+    let text = document.getText();
+    text = text.replace(/([\u4e00-\u9fa5])([a-zA-Z0-9])/g, '$1 $2').replace(/([a-zA-Z0-9])([\u4e00-\u9fa5])/g, '$1 $2');
+
+    editor.edit((editBuilder) => {
+      editBuilder.replace(range, text);
+    });
+  }
+}

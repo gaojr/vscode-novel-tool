@@ -38,6 +38,10 @@
       {
         "command": "novel.tool.punctuationE2C",
         "title": "英文标点转换为中文"
+      },
+      {
+        "command": "novel.tool.addwhitespace",
+        "title": "英文、数字跟中文之间加空格"
       }
     ]
   },

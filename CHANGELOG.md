@@ -6,6 +6,11 @@ All notable changes to this project will be documented in this file.
 
 - 打开文件时自动转换编码
 - 矫正引号
+
+## [0.0.6] - 2020-05-18
+
+### Added
+
 - 英文、数字跟中文之间加空格
 
 ## [0.0.5] - 2020-05-09
