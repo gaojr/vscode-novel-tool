@@ -6,15 +6,21 @@
 
 ## Features
 
-- 全角转半角功能
-  - 以下全角字符会被转换为半角字符: `　＂＃＄％＆＇（）＊＋，－．／０１２３４５６７８９＜＝＞＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝～`
-- 删除行末空白
-- 删除行首空白
-- 增加空行
-- 删除空行
-- 英文标点转换为中文
-  - 以下英文标点会被转换为中文字符: `,!?;:`
-- 英文、数字跟中文之间加空格
+- 全角转半角功能 `novel.tool.narrow`
+  - 以下全角字符会被转换为半角字符:
+  ```
+  　＂＃＄％＆＇（）＊＋，－．／０１２３４５６７８９＜＝＞＠ＡＢＣＤＥＦＧＨＩＪＫＬＭＮＯＰＱＲＳＴＵＶＷＸＹＺ［＼］＾＿｀ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚ｛｜｝～
+  ```
+- 删除行末空白 `novel.tool.deleteBlankAfter`
+- 删除行首空白 `novel.tool.deleteBlankBefore`
+- 增加空行 `novel.tool.addEmpetyLine`
+- 删除空行 `novel.tool.deleteEmpetyLine`
+- 英文标点转换为中文 `novel.tool.punctuationE2C`
+  - 以下英文标点会被转换为中文字符:
+  ```
+  ,!?;:
+  ```
+- 英文、数字跟中文之间加空格 `novel.tool.addwhitespace`
 
 ## Extension Settings
 
@@ -22,7 +28,7 @@
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/gaojr/vscode-novel-tool/issues/new).
+Feel free to check [issues page](https://github.com/gaojr/vscode-novel-tool/issues/new)~
 
 ## Show your support
 

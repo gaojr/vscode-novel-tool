@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 
 - 打开文件时自动转换编码
 - 矫正引号
+- 按配置的顺序执行命令
+- i18n
 
 ## [0.0.6] - 2020-05-18
 
