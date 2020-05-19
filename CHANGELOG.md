@@ -9,6 +9,12 @@ All notable changes to this project will be documented in this file.
 - 按配置的顺序执行命令
 - i18n
 
+## [0.0.7] - 2020-05-19
+
+### Fixed
+
+- 增加空行
+
 ## [0.0.6] - 2020-05-18
 
 ### Added
@@ -26,7 +32,7 @@ All notable changes to this project will be documented in this file.
   ,!?;:
   ```
 
-### fix
+### Changed
 
 - 全角转半角功能:
   ```

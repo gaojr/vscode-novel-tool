@@ -1,6 +1,6 @@
 # vscode-novel-tool
 
-![Version](https://img.shields.io/badge/version-0.0.6-orange.svg?cacheSeconds=3600)
+![Version](https://img.shields.io/badge/version-0.0.7-orange.svg?cacheSeconds=3600)
 
 [![License: MPL-2.0](https://img.shields.io/github/license/gaojr/vscode-novel-tool?cacheSeconds=3600)](https://github.com/gaojr/vscode-novel-tool/blob/master/LICENSE)
 

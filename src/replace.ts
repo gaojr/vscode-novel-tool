@@ -88,8 +88,11 @@ export function deleteBlankBefore(): void {
  * 增加空行
  */
 export function addEmpetyLine(): void {
-  if (window.activeTextEditor) {
-    addByLine(window.activeTextEditor, '\n');
+  const editor = window.activeTextEditor;
+  if (editor) {
+    const eol = editor.document.eol.valueOf();
+    const val = eol === 2 ? '\r\n' : '\n';
+    addByLine(editor, val);
   }
 }
 
