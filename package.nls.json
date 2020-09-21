@@ -1,0 +1,10 @@
+{
+  "novel.tool.narrow": "Novel Tool: Narrow",
+  "novel.tool.deleteBlankAfter": "Novel Tool: Delete Blank After",
+  "novel.tool.deleteBlankBefore": "Novel Tool: Delete Blank Before",
+  "novel.tool.addEmpetyLine": "Novel Tool: Add Empety Line",
+  "novel.tool.deleteEmpetyLine": "Novel Tool: Delete Empety Line",
+  "novel.tool.punctuationE2C": "Novel Tool: Punctuation E2 C",
+  "novel.tool.addWhitespace": "Novel Tool: Add Whitespace",
+  "novel.tool.setTitle": "Novel Tool: Set Title"
+}

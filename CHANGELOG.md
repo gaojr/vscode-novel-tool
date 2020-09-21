@@ -7,13 +7,13 @@ All notable changes to this project will be documented in this file.
 - 打开文件时自动转换编码
 - 矫正引号
 - 按配置的顺序执行命令
-- i18n
 
 ## [0.0.8] - 2020-09-21
 
 ### Added
 
 - 标记章节
+- i18n
 
 ## [0.0.7] - 2020-05-19
 

@@ -1,0 +1,10 @@
+{
+  "novel.tool.narrow": "小说工具: 全角转换为半角",
+  "novel.tool.deleteBlankAfter": "小说工具: 删除行末空白",
+  "novel.tool.deleteBlankBefore": "小说工具: 删除行首空白",
+  "novel.tool.addEmpetyLine": "小说工具: 增加空行",
+  "novel.tool.deleteEmpetyLine": "小说工具: 删除空行",
+  "novel.tool.punctuationE2C": "小说工具: 英文标点转换为中文",
+  "novel.tool.addWhitespace": "小说工具: 英文、数字跟中文之间加空格",
+  "novel.tool.setTitle": "小说工具: 标记章节"
+}
