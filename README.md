@@ -20,7 +20,7 @@
   ```
   ,!?;:
   ```
-- 英文、数字跟中文之间加空格 `novel.tool.addwhitespace`
+- 英文、数字跟中文之间加空格 `novel.tool.addWhitespace`
 
 ## Extension Settings
 

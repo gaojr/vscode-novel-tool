@@ -146,7 +146,7 @@ export function punctuationE2C(): void {
 /**
  * 英文、数字跟中文之间加空格
  */
-export function addwhitespace(): void {
+export function addWhitespace(): void {
   const editor = window.activeTextEditor;
   if (editor) {
     const document = editor.document;

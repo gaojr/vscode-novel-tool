@@ -40,7 +40,7 @@
         "title": "英文标点转换为中文"
       },
       {
-        "command": "novel.tool.addwhitespace",
+        "command": "novel.tool.addWhitespace",
         "title": "英文、数字跟中文之间加空格"
       }
     ]

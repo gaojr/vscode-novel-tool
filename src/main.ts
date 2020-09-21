@@ -51,8 +51,8 @@ export function activate(context: ExtensionContext): void {
   );
 
   disposables.push(
-    commands.registerCommand('novel.tool.addwhitespace', () => {
-      replace.addwhitespace();
+    commands.registerCommand('novel.tool.addWhitespace', () => {
+      replace.addWhitespace();
     })
   );
 }
