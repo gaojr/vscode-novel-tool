@@ -1,6 +1,6 @@
 {
   "name": "vscode-novel-tool",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "a tool for reading novel on vscode",
   "publisher": "gaojr",
   "repository": {
@@ -42,6 +42,10 @@
       {
         "command": "novel.tool.addWhitespace",
         "title": "英文、数字跟中文之间加空格"
+      },
+      {
+        "command": "novel.tool.setTitle",
+        "title": "标记章节"
       }
     ]
   },
@@ -51,7 +55,7 @@
     "compile": "tsc -p ./",
     "lint": "eslint src --ext .ts,.js",
     "fix": "eslint --fix src --ext .ts,.js",
-    "format": "prettier --write \"**/*.{ts,js,json,md}\""
+    "format": "prettier --write \"{*.{json,md},src/*.{ts,js}}\""
   },
   "devDependencies": {
     "vsce": "^1.75.0",

@@ -55,6 +55,12 @@ export function activate(context: ExtensionContext): void {
       replace.addWhitespace();
     })
   );
+
+  disposables.push(
+    commands.registerCommand('novel.tool.setTitle', () => {
+      replace.setTitle();
+    })
+  );
 }
 
 /**

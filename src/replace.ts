@@ -160,3 +160,21 @@ export function addWhitespace(): void {
     });
   }
 }
+
+/**
+ * 标记章节
+ */
+export function setTitle(): void {
+  const editor = window.activeTextEditor;
+  if (editor) {
+    const document = editor.document;
+    const lastLine = document.lineCount;
+    const range = new Range(0, 0, lastLine, 0);
+    let text = document.getText();
+    text = text.replace(/(第\d+章)/g, '## $1');
+
+    editor.edit((editBuilder) => {
+      editBuilder.replace(range, text);
+    });
+  }
+}
