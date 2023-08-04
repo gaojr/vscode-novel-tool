@@ -58,7 +58,7 @@
     "format": "prettier --write \"{*.{json,md},src/*.{ts,js}}\""
   },
   "devDependencies": {
-    "vsce": "^1.75.0",
+    "vsce": "^1.103.1",
     "@types/vscode": "^1.44.0",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "@typescript-eslint/parser": "^2.29.0",
